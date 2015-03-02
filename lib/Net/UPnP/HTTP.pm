@@ -66,6 +66,7 @@ $req_header = <<"REQUEST_HEADER";
 $method $path HTTP/1.0
 Host: $post_addr:$post_port
 Content-Length: $req_content_len
+Connection: close
 REQUEST_HEADER
 
 	#print "header = " . %{$add_header} . "\n";
